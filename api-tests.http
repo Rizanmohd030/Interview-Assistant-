@@ -1,0 +1,35 @@
+### Health Check
+GET http://localhost:3000/health
+
+###
+
+### Generate Interview Questions - Software Engineer
+POST http://localhost:3000/api/interviews/generate
+Content-Type: application/json
+
+{
+  "jobRole": "Software Engineer",
+  "location": "Remote"
+}
+
+###
+
+### Generate Interview Questions - Data Scientist
+POST http://localhost:3000/api/interviews/generate
+Content-Type: application/json
+
+{
+  "jobRole": "Data Scientist",
+  "location": "New York"
+}
+
+###
+
+### Evaluate Answer
+POST http://localhost:3000/api/interviews/evaluate
+Content-Type: application/json
+
+{
+  "userAnswer": "I would use async/await to handle asynchronous operations because it makes code more readable",
+  "expectedAnswer": "Async/await is a modern way to handle asynchronous operations in JavaScript"
+}

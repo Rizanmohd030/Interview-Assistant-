@@ -1,0 +1,33 @@
+{
+  "name": "ai-int",
+  "version": "1.0.0",
+  "description": "AI-powered interview assistant with workflow orchestration",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "interview",
+    "langchain",
+    "openai",
+    "n8n"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "@langchain/core": "^1.0.2",
+    "@langchain/openai": "^1.0.0",
+    "axios": "^1.13.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "langchain": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
